@@ -1,0 +1,78 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "fitness_enthusiast",
+      "email": "user@fitness.com",
+      "password": "hashed_password_here",
+      "age": 28,
+      "gender": "male",
+      "height": 175,
+      "weight": 75.5,
+      "fitnessGoal": "muscle_gain"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Morning Run",
+      "type": "cardio",
+      "duration": 45,
+      "caloriesBurned": 400,
+      "difficulty": "intermediate",
+      "date": "2024-02-15"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Weight Training",
+      "type": "strength",
+      "duration": 60,
+      "caloriesBurned": 300,
+      "difficulty": "advanced",
+      "date": "2024-02-16"
+    }
+  ],
+  "nutrition": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Chicken Salad",
+      "calories": 350,
+      "protein": 30,
+      "carbs": 15,
+      "fat": 12,
+      "mealType": "lunch",
+      "date": "2024-02-15"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Protein Shake",
+      "calories": 200,
+      "protein": 25,
+      "carbs": 5,
+      "fat": 3,
+      "mealType": "snack",
+      "date": "2024-02-15"
+    }
+  ],
+  "bodyMeasurements": [
+    {
+      "id": 1,
+      "userId": 1,
+      "weight": 75.5,
+      "bodyFatPercentage": 18.5,
+      "muscleMass": 40.2,
+      "date": "2024-02-17"
+    }
+  ],
+  "tokens": [
+    {
+      "userId": 1,
+      "token": "generated_jwt_token",
+      "expiresAt": "2024-01-18T10:30:00Z"
+    }
+  ]
+}
