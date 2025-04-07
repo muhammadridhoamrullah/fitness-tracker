@@ -1,0 +1,23 @@
+[
+  {
+    "UserId": 1,
+    "weight": 70,
+    "bodyFatPercentage": 18,
+    "muscleMass": 45,
+    "date": "2025-04-06"
+  },
+  {
+    "UserId": 2,
+    "weight": 58,
+    "bodyFatPercentage": 22,
+    "muscleMass": 38,
+    "date": "2025-04-06"
+  },
+  {
+    "UserId": 1,
+    "weight": 69,
+    "bodyFatPercentage": 17,
+    "muscleMass": 46,
+    "date": "2025-04-07"
+  }
+]

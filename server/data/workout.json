@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Morning Run",
+    "type": "cardio",
+    "duration": 30,
+    "caloriesBurned": 350,
+    "difficulty": "beginner",
+    "UserId": 1,
+    "date": "2025-04-06"
+  },
+  {
+    "name": "Weight Lifting - Full Body",
+    "type": "strength",
+    "duration": 45,
+    "caloriesBurned": 500,
+    "difficulty": "intermediate",
+    "UserId": 2,
+    "date": "2025-04-06"
+  },
+  {
+    "name": "Yoga Session",
+    "type": "flexibility",
+    "duration": 60,
+    "caloriesBurned": 200,
+    "difficulty": "beginner",
+    "UserId": 1,
+    "date": "2025-04-07"
+  }
+]

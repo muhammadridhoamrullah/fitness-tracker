@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Chicken Salad",
+    "calories": 400,
+    "protein": 30,
+    "carbs": 10,
+    "fat": 20,
+    "mealType": "lunch",
+    "UserId": 1,
+    "date": "2025-04-06"
+  },
+  {
+    "name": "Protein Shake",
+    "calories": 250,
+    "protein": 20,
+    "carbs": 15,
+    "fat": 5,
+    "mealType": "snack",
+    "UserId": 2,
+    "date": "2025-04-06"
+  },
+  {
+    "name": "Oatmeal with Berries",
+    "calories": 350,
+    "protein": 8,
+    "carbs": 60,
+    "fat": 8,
+    "mealType": "breakfast",
+    "UserId": 1,
+    "date": "2025-04-07"
+  }
+]

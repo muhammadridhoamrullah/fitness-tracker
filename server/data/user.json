@@ -1,0 +1,22 @@
+[
+  {
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "password": "securepassword123",
+    "age": 28,
+    "gender": "male",
+    "height": 175,
+    "weight": 70,
+    "fitnessGoal": "weight_loss"
+  },
+  {
+    "username": "jane_smith",
+    "email": "jane.smith@example.com",
+    "password": "anotherpassword456",
+    "age": 24,
+    "gender": "female",
+    "height": 160,
+    "weight": 58,
+    "fitnessGoal": "muscle_gain"
+  }
+]
