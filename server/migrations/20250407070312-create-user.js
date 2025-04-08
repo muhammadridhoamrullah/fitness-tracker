@@ -27,10 +27,10 @@ module.exports = {
         type: Sequelize.STRING,
       },
       height: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       weight: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       fitnessGoal: {
         type: Sequelize.STRING,

@@ -96,9 +96,7 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: {
             msg: "Date is required",
           },
-          isDate: {
-            msg: "Date must be a valid date",
-          },
+    
         },
       },
     },

@@ -84,53 +84,18 @@ module.exports = (sequelize, DataTypes) => {
       age: {
         type: DataTypes.INTEGER,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Age must be a number",
-          },
-          min: {
-            args: 0,
-            msg: "Age must be a positive number",
-          },
-        },
       },
       gender: {
         type: DataTypes.STRING,
         allowNull: true,
       },
       height: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Height must be a number",
-          },
-          min: {
-            args: 0,
-            msg: "Height must be a positive number",
-          },
-          max: {
-            args: 300,
-            msg: "Height must be less than 300 cm",
-          },
-        },
       },
       weight: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Weight must be a number",
-          },
-          min: {
-            args: 0,
-            msg: "Weight must be a positive number",
-          },
-          max: {
-            args: 500,
-            msg: "Weight must be less than 500 kg",
-          },
-        },
       },
       fitnessGoal: {
         type: DataTypes.STRING,
