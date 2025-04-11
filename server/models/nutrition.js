@@ -18,11 +18,11 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          notNull: {
-            msg: "Name Nutrition is required",
-          },
           notEmpty: {
-            msg: "Name Nutrition is required",
+            msg: "Name is required",
+          },
+          notNull: {
+            msg: "Name is required",
           },
         },
       },
@@ -31,68 +31,34 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notNull: {
-            msg: "Calories Nutrition is required",
+            msg: "Calories is required",
           },
           notEmpty: {
-            msg: "Calories Nutrition is required",
-          },
-          isInt: {
-            msg: "Calories Nutrition must be an integer",
-          },
-          min: {
-            args: [1],
-            msg: "Calories Nutrition must be at least 1 calorie",
+            msg: "Calories is required",
           },
         },
       },
       protein: {
         type: DataTypes.INTEGER,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Protein Nutrition must be an integer",
-          },
-          min: {
-            args: [0],
-            msg: "Protein Nutrition must be at least 0 grams",
-          },
-        },
       },
       carbs: {
         type: DataTypes.INTEGER,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Carbs Nutrition must be an integer",
-          },
-          min: {
-            args: [0],
-            msg: "Carbs Nutrition must be at least 0 grams",
-          },
-        },
       },
       fat: {
         type: DataTypes.INTEGER,
         allowNull: true,
-        validate: {
-          isInt: {
-            msg: "Fat Nutrition must be an integer",
-          },
-          min: {
-            args: [0],
-            msg: "Fat Nutrition must be at least 0 grams",
-          },
-        },
       },
       mealType: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           notNull: {
-            msg: "Meal Type Nutrition is required",
+            msg: "Meal Type is required",
           },
           notEmpty: {
-            msg: "Meal Type Nutrition is required",
+            msg: "Meal Type is required",
           },
         },
       },
@@ -113,13 +79,10 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notNull: {
-            msg: "Date Nutrition is required",
+            msg: "Date is required",
           },
           notEmpty: {
-            msg: "Date Nutrition is required",
-          },
-          isDate: {
-            msg: "Date Nutrition must be a valid date",
+            msg: "Date is required",
           },
         },
       },

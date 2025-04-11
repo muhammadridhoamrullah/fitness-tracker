@@ -8,10 +8,10 @@ module.exports = {
       el.updatedAt = new Date();
       return el;
     });
-    await queryInterface.bulkInsert("Nutritions", data);
+    await queryInterface.bulkInsert("Nutrition", data);
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.bulkDelete("Nutritions", null, {});
+    await queryInterface.bulkDelete("Nutrition", null, {});
   },
 };

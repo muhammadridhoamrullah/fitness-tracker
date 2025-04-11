@@ -21,6 +21,14 @@ async function errorHandler(err, req, res, next) {
     return res.status(400).json({
       message: "Invalid Email or Password",
     });
+  } else if (err.name === "UNAUTHORIZED") {
+    return res.status(401).json({
+      message: "Unauthorized",
+    });
+  } else if (err.name === "WORKOUT_FIELDS_REQUIRED") {
+    return res.status(400).json({
+      message: "Name, Type, Duration, and Date are required",
+    });
   }
 }
 

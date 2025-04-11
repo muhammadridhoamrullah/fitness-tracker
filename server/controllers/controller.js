@@ -89,6 +89,59 @@ class Controller {
       access_token,
     });
   }
+
+  static async GetAllWorkouts(req, res, next) {
+    try {
+      const workouts = await Workout.findAll({
+        where: {
+          UserId: req.user.id,
+        },
+      });
+
+      res.status(200).json(workouts);
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async DoWorkout(req, res, next) {
+    try {
+      const { name, type, duration, caloriesBurned, difficulty, date } =
+        req.body;
+
+      if (!name || !type || !duration || !date) {
+        throw { name: "WORKOUT_FIELDS_REQUIRED" };
+      }
+
+      const workout = await Workout.create({
+        name,
+        type,
+        duration,
+        caloriesBurned,
+        difficulty,
+        date,
+        UserId: req.user.id,
+      });
+
+      res.status(201).json({
+        message: "Workout added successfully",
+      });
+    } catch (error) {
+      next(error);
+    }
+  }
+
+  static async GetAllNutrition(req, res, next) {
+    try {
+      const nutritions = await Nutrition.findAll();
+
+      res.status(200).json(nutritions);
+    } catch (error) {
+      console.log(error, "error apa boi");
+
+      next(error);
+    }
+  }
 }
 
 module.exports = {
